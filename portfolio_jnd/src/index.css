@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Changa');
+
+@layer base {
+    body {
+        @apply font-[Changa];
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer;
+    }
+}
