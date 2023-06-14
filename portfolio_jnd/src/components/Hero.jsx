@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {HiArrowNarrowRight} from 'react-icons/hi'
 import Typed from 'react-typed'
 
@@ -6,6 +6,24 @@ import Typed from 'react-typed'
 
 
 const Hero = () => {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Function to check if the screen size is mobile
+  const checkIfMobile = () => {
+    setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+  };
+
+  // Run the check on component mount and window resize
+  useEffect(() => {
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+    return () => {
+      window.removeEventListener('resize', checkIfMobile);
+    };
+  }, []);
+
+
     return (
       <div name='home' className='w-full h-screen bg-[#07142c]'>
         {/* Container */}
@@ -17,11 +35,12 @@ const Hero = () => {
       strings={[
             "Student",
             "Developer",
-            "Designer",
+            
           ]}
-          typeSpeed={25}
+          typeSpeed={40}
           backSpeed={200}
-          loop
+          loop={true}
+          showCursor={false}
         /></span>
           </h2>
           <div>
