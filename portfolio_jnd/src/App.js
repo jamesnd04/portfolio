@@ -13,8 +13,8 @@ function App() {
       <Hero/>
       <About/>
       <Skills/>
-      <Projects />
-      <Contact />
+      <Projects/>
+      <Contact/>
     </div>
   );
 }
