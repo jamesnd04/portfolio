@@ -33,7 +33,8 @@ const About = () => {
                         where I intend to major in Computer Science(B.S) with a minor in Data Science. Some relevant courses I've taken include Data Structures and Analaysis, Discrete Structures,
                         and Calculus of Functions. At UNC, I'm involved in Black in Tech, Acts to Fellowship, and I serve as the Membership Officer for TechX, which is a software development society.
                         Within computer science, I am most interested in software engineering, numerical analysis, and artificial intelligience.
-                        Outside of that, I enjoy playing and watching soccer, going to concerts, and watching film analysis.
+                        Outside of that, I enjoy playing and watching soccer, going to concerts, and watching film analysis. I'm currently searching for software engineering internships for Summer 2024, so please feel
+                        free to reach out to me!
                          </p>
                     
                 </div>
