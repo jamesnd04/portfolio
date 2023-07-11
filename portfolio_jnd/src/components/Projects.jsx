@@ -1,7 +1,9 @@
 import React from 'react'
-import SR from '../assets/spotifyrec.png';
+import SR from '../assets/spotifyrec.png'
 import web from '../assets/websiteJ.png'
 import coming from '../assets/comingsoon.jpg'
+import discordb from '../assets/discordbot.png'
+
 
 const Projects = () => {
   return (
@@ -33,6 +35,24 @@ const Projects = () => {
                     </div>
                 </div>
 
+                <div style={{backgroundImage: `url(${discordb})`}}
+                className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
+                    
+                    <div className='opacity-0 group-hover:opacity-80 ' >
+                        <span className='text-2xl font-bold text-white tracking-wider '>
+                            Discord Chatbot
+                        </span>
+                        <div className='pt-8 text-center'>
+                            <a href = "https://www.loom.com/share/a5411755b8274160aa20cf43ad52dcce?sid=b98a1a7d-36d7-48ea-9c17-a94400523cd9">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
+                            </a>
+                            <a href = "https://github.com/jamesnd04/DiscordChatbot">
+                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <div style={{backgroundImage: `url(${SR})`}}
                 className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
                     
@@ -49,23 +69,6 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div style={{backgroundImage: `url(${coming})`}}
-                className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>
-                    
-                    <div className='opacity-0 group-hover:opacity-80 ' >
-                        <span className='text-2xl font-bold text-white tracking-wider '>
-                            Coming Soon!
-                        </span>
-                        <div className='pt-8 text-center'>
-                            <a href = "/">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                            </a>
-                            <a href = "/">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
 
                 <div style={{backgroundImage: `url(${coming})`}}
                 className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'>

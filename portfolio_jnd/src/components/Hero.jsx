@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi'
 import Typed from 'react-typed'
-
+import {Link} from 'react-scroll'
 
 
 
@@ -44,11 +44,14 @@ const Hero = () => {
         /></span>
           </h2>
           <div>
-            <button className='text-[#ffffff] group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#EF0107] hover:border-[#EF0107]'>View Work 
+          <Link to="projects" smooth={true} duration={750}>
+            <button className='text-[#ffffff] group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#EF0107] hover:border-[#EF0107]'>
+            View Work
             <span className='group-hover:rotate-90 duration-300'>
             <HiArrowNarrowRight className='ml-3'/>
             </span>
             </button>
+            </Link>
           </div>
         </div>
        
