@@ -20,8 +20,6 @@ const Navbar = () => {
                 <li><Link  to="home" smooth={true} duration={500}>Home</Link></li>
                 <li><Link  to="About" smooth={true} duration={500}>About Me</Link></li>
                 <li><Link  to="Skills" smooth={true} duration={500}>Skills</Link></li>
-                <li><Link  to="projects" smooth={true} duration={500}>Work</Link></li>
-                <li><Link  to="contact" smooth={true} duration={500}>Contact</Link></li>
             </ul>
         
         {/*Hamburger */}
@@ -33,8 +31,7 @@ const Navbar = () => {
         <li className='text-4xl py-2'><Link onClick={handleClick} to="home" smooth={true} duration={500}>Home</Link></li>
                 <li className='text-4xl py-2'><Link onClick={handleClick} to="About" smooth={true} duration={500}>About Me</Link></li>
                 <li className='text-4xl py-2'><Link onClick={handleClick} to="Skills" smooth={true} duration={500}>Skills</Link></li>
-                <li className='text-4xl py-2'><Link onClick={handleClick}  to="projects" smooth={true} duration={500}>Work</Link></li>
-                <li className='text-4xl py-2'><Link onClick={handleClick} to="contact" smooth={true} duration={500}>Contact</Link></li>
+             
         </ul>
 
         {/*Social Icons */}
@@ -49,7 +46,7 @@ const Navbar = () => {
                     </a>
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69] '>
-                    <a className='flex justify-between items-center w-full text-gray-300'href = 'https://drive.google.com/file/d/1-eOPyXA77XOA59nFaQ2AXi24eI8tPsxy/view?usp=sharing'>Resume <BsFillPersonLinesFill size={30}/>
+                    <a className='flex justify-between items-center w-full text-gray-300'href = 'https://docs.google.com/document/d/1Ay2GWUxRuqEFME8AjS2omfrftr9d7jA0/edit?usp=sharing&ouid=116399182852946898166&rtpof=true&sd=true'>Resume <BsFillPersonLinesFill size={30}/>
                     </a>
                 </li>
             </ul>

@@ -1,12 +1,11 @@
 import React from 'react'
 
-import JavaScript from '../assets/javascript.png'
+import Typescript from '../assets/ts.png'
 import Java from '../assets/icons8-java-logo-250.png'
 import Python from '../assets/icons8-python-48.png'
-import ReactLogo from '../assets/react.png'
-import CSS from '../assets/css.png'
-import HTMLi from '../assets/html.png'
-
+import Next from '../assets/next.png'
+import FastAPI from '../assets/fastapi.png'
+import MySQL from '../assets/sql.png'
 
 
 const Skills = () => {
@@ -28,20 +27,20 @@ const Skills = () => {
                     <p className='my-4'>Python</p>
                 </div>
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='w-20 mx-auto' src = {ReactLogo} alt="React icon"/>
-                    <p className='my-4'>React</p>
+                    <img className='w-20 mx-auto' src = {Next} alt="React icon"/>
+                    <p className='my-4'>Next.js</p>
                 </div>
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='w-20 mx-auto' src = {CSS} alt="CSS icon"/>
-                    <p className='my-4'>CSS</p>
+                    <img className='w-20 mx-auto' src = {MySQL} alt="CSS icon"/>
+                    <p className='my-4'>MySQL</p>
                 </div>
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='w-20 mx-auto' src = {JavaScript} alt="JavasCRIPT icon"/>
-                    <p className='my-4'>JavaScript</p>
+                    <img className='w-20 mx-auto' src = {Typescript} alt="JavasCRIPT icon"/>
+                    <p className='my-4'>TypeScript</p>
                 </div>
                 <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
-                    <img className='w-20 mx-auto' src = {HTMLi} alt="HTML icon"/>
-                    <p className='my-4'>HTML</p>
+                    <img className='w-20 mx-auto' src = {FastAPI} alt="HTML icon"/>
+                    <p className='my-4'>FastAPI</p>
                 </div>
             </div>
         </div>

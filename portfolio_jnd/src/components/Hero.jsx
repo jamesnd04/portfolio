@@ -44,9 +44,9 @@ const Hero = () => {
         /></span>
           </h2>
           <div>
-          <Link to="projects" smooth={true} duration={750}>
+          <Link to="About" smooth={true} duration={750}>
             <button className='text-[#ffffff] group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#EF0107] hover:border-[#EF0107]'>
-            View Work
+            About Me
             <span className='group-hover:rotate-90 duration-300'>
             <HiArrowNarrowRight className='ml-3'/>
             </span>
