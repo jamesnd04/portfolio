@@ -1,0 +1,509 @@
+/* Portfolio Styles - James Dankwah */
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Changa");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Changa", sans-serif;
+  background-color: #07142c;
+  color: #ffffff;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  background-color: #011c38;
+  color: #d1d5db;
+  z-index: 1000;
+}
+
+.nav-logo {
+  width: 130px;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-menu li {
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.nav-menu li:hover {
+  color: #ef0107;
+}
+
+.hamburger {
+  display: block;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #011c38;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-menu li {
+  font-size: 2rem;
+  padding: 0.5rem 0;
+}
+
+.social-icons {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  top: 35%;
+  left: 0;
+}
+
+.social-item {
+  width: 160px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -100px;
+  transition: margin-left 0.3s;
+}
+
+.social-item:hover {
+  margin-left: -10px;
+}
+
+.social-linkedin {
+  background-color: #0072b1;
+}
+
+.social-github {
+  background-color: #333333;
+}
+
+.social-resume {
+  background-color: #565f69;
+}
+
+.social-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #d1d5db;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-color: #07142c;
+}
+
+.hero-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-greeting {
+  color: #ef0107;
+}
+
+.hero-name {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #9c824a;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.hero-button {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #ef0107;
+  border-color: #ef0107;
+}
+
+.hero-button span {
+  transition: transform 0.3s;
+}
+
+.hero-button:hover span {
+  transform: rotate(90deg);
+}
+
+.hero-image {
+  display: none;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ef0107;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+  width: 100%;
+  height: 100vh;
+  background-color: #07142c;
+  color: #ffffff;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.about-content {
+  max-width: 1000px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.about-title {
+  font-size: 3.75rem;
+  font-weight: bold;
+  display: inline;
+  border-bottom: 4px solid #ef0107;
+  padding-bottom: 0.5rem;
+}
+
+.about-text {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1000px;
+  width: 100%;
+  height: 288px;
+}
+
+.about-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-img {
+  height: 288px;
+  padding: 18px 0;
+}
+
+/* Skills Section */
+.skills {
+  width: 100%;
+  height: 100vh;
+  background-color: #07142c;
+  color: #ffffff;
+}
+
+.skills-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.skills-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  display: inline;
+  border-bottom: 4px solid #ef0107;
+  padding-bottom: 0.5rem;
+}
+
+.skills-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.skill-item {
+  box-shadow: 0 4px 6px #040c16;
+  transition: transform 0.5s;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+.skill-icon {
+  width: 80px;
+  margin: 0 auto;
+}
+
+.skill-name {
+  margin: 1rem 0;
+}
+
+/* Classes Section */
+.classes {
+  width: 100%;
+  height: 100vh;
+  background-color: #07142c;
+  color: #ffffff;
+}
+
+.classes-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.classes-title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  display: inline;
+  border-bottom: 4px solid #ef0107;
+  padding-bottom: 0.5rem;
+}
+
+.classes-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.class-item {
+  box-shadow: 0 4px 6px #040c16;
+  transition: transform 0.5s;
+}
+
+.class-item:hover {
+  transform: scale(1.1);
+}
+
+.class-icon {
+  width: 80px;
+  height: 80px;
+  color: #ef0107;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.class-name {
+  margin: 1rem 0;
+}
+
+.bottom {
+  width: 100%;
+  height: 4vh;
+  background-color: #07142c;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .nav-menu {
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .social-icons {
+    display: flex;
+  }
+
+  .hero-name {
+    font-size: 4.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-image {
+    display: flex;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .classes-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-name {
+    font-size: 6rem;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+/* Color Palette Reference */
+/*
+Primary Background: #07142c (Dark Blue)
+Secondary Background: #011c38 (Darker Blue)
+Accent Color: #EF0107 (Red)
+Text Color: #ffffff (White)
+Secondary Text: #9C824A (Gold)
+Gray Text: #d1d5db (Light Gray)
+*/
